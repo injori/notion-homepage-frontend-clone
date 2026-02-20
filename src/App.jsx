@@ -1,17 +1,20 @@
 import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
+import Intro from './components/ui/HomePage/Intro'
 import Features from './components/ui/HomePage/Features'
+import ExpenseCalculator from './components/ui/HomePage/ExpenseCalculator'
+import Brands from './components/ui/HomePage/Brands'
+import ApplicationExamples from './components/ui/HomePage/ApplicationExamples'
 
 export default function App() {
-  // return (
-  //   // <div className="min-h-screen flex items-center justify-center text-4xl font-bold text-purple-600">
-  //   //   Tailwind is working 🎉
-  //   // </div>
-  // )
   return(
     <>
+      <Intro/>
       <Features/>
+      <ExpenseCalculator/>
+      <Brands/>
+      <ApplicationExamples/>
     </>
   )
 }

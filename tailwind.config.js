@@ -7,6 +7,10 @@ export default {
   ],
   theme: {
   	extend: {
+		fontFamily: {
+			dmsans: ['"DM Sans"', 'sans-serif'],
+			sortsmillgoudy: [ '"Sorts Mill Goudy"', 'serif']
+		},
   		borderRadius: {
   			lg: 'var(--radius)',
   			md: 'calc(var(--radius) - 2px)',
