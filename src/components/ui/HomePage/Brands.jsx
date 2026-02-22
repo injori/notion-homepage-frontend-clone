@@ -33,7 +33,7 @@ export default function Brands(){
                 <Card className = "w-[85%] mx-auto">
                     <CardTitle>
                         <img
-                            src = "/public/logos/Toyota_Logo_1.png"
+                            src = "/logos/Toyota_Logo_1.png"
                             className=" w-[35%] mx-7 my-4"
                         />
                     </CardTitle>
@@ -43,7 +43,7 @@ export default function Brands(){
                 <Card className = "w-[85%] mx-auto ">
                     <CardTitle>
                         <img
-                            src = "/public/logos/Ramp_idxW_Yq9Eu_1.png"
+                            src = "/logos/Ramp_idxW_Yq9Eu_1.png"
                             className=" w-[23%] mx-7 my-3"
                         />
                     </CardTitle>
@@ -53,7 +53,7 @@ export default function Brands(){
                 <Card className = "w-[85%] mx-auto ">
                     <CardTitle>
                         <img 
-                            src = "/public/logos/Vercel_Logo_1.png"
+                            src = "/logos/Vercel_Logo_1.png"
                             className=" w-[25%] mx-7 my-3"
                         />
                     </CardTitle>

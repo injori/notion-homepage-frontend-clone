@@ -6,7 +6,7 @@ export default function Intro(){
             <div>
 
                 <video
-                    src = "/public/videos/homepage-hero-animation.mp4"
+                    src = "/videos/homepage-hero-animation.mp4"
                     autoPlay
                     loop
                     muted

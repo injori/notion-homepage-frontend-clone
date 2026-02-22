@@ -6,6 +6,8 @@ import Features from './components/ui/HomePage/Features'
 import ExpenseCalculator from './components/ui/HomePage/ExpenseCalculator'
 import Brands from './components/ui/HomePage/Brands'
 import ApplicationExamples from './components/ui/HomePage/ApplicationExamples'
+import DownloadSection from './components/ui/HomePage/DownloadSection'
+import FooterSection from './components/ui/HomePage/FooterSection'
 
 export default function App() {
   return(
@@ -15,6 +17,8 @@ export default function App() {
       <ExpenseCalculator/>
       <Brands/>
       <ApplicationExamples/>
+      <DownloadSection/>
+      <FooterSection/>
     </>
   )
 }

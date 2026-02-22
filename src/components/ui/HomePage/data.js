@@ -13,3 +13,48 @@ export  const checkboxList = [
   { id: "service11", val: "site builder", text: "Site Builder", checked:false },
   { id: "service12", val: "forms", text: "Forms", checked:false },
 ];
+
+export const footerData = [
+  {
+    category: "Company",
+    elements: [
+      "About us",
+      "Careers",
+      "Security",
+      "Status",
+      "Terms & privacy",
+      "Your privacy rights"
+    ]
+  },
+  {
+    category: "Download",
+    elements: [
+      "iOS & Android",
+      "Mac & Windows",
+      "Mail",
+      "Calendar",
+      "Web Clipper"
+    ]
+  },
+  {
+    category: "Resources",
+    elements: [
+      "Help center",
+      "Pricing",
+      "Blog",
+      "Community",
+      "Integrations",
+      "Templates",
+      "Partner programs"
+    ]
+  },
+  {
+    category: "Notion for",
+    elements: [
+      "Enterprise",
+      "Small business",
+      "Personal",
+      "Explore more →"
+    ]
+  }
+];
