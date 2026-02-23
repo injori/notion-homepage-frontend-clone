@@ -1,5 +1,5 @@
 import { Icon } from "lucide-react";
-
+import clsx from "clsx";
 export default function Intro(){
     return (
         <>
@@ -11,53 +11,134 @@ export default function Intro(){
                     loop
                     muted
                     playsInline
+                    className="mx-auto w-[95%]"
                 />
 
                 <div className=" flex flex-col gap-2 justify-center items-center w-[80%] mx-auto">
                     
-                    <h1 className="indent-10 w-[5em] text-4xl font-dmsans font-extrabold">One workspace.</h1>
-                    <h1 className="text-center tracking-tight text-4xl font-dmsans font-bold">Zero busywork.</h1>
+                    {/* <h1 className="indent-10 w-[5em] text-4xl font-dmsans font-extrabold md:w-[75%] md:text-center md:text-5xl">One workspace.</h1> */}
+                    <h1 className={ clsx(
+                        "indent-10 w-[5em] text-4xl font-dmsans font-extrabold",
+                        "md:w-[75%] md:text-center md:text-5xl",
+                    )}>
+                        One workspace.
+                    </h1>
 
-                    <p className="font-dmsans font-light text-sm w-[70%] tracking-tight leading-4">Notion is where your teams and AI agents capture knowledge, find answers, and automate projects. Now a team of 7 feels like 70.</p>
-                    <button className=" w-[70%] p-1 rounded-md font-dmsans font-medium bg-[#0075de] text-white ">Try Notion</button>
-                    <button className="w-[70%] p-1 rounded-md font-dmsans font-medium bg-[#8bc2ef] opacity-0.5 text-[#0075de]">Request a demo</button>
+                    <h1
+                        className={clsx(
+                            "text-center tracking-tight text-4xl font-dmsans font-bold",
+                            "md:w-[75%] md:pl-8 md:text-5xl"
+                        )}
+                        >
+                        Zero busywork.
+                    </h1>
+                    <p
+                        className={clsx(
+                            "font-dmsans font-light text-sm w-[70%] tracking-tight leading-4 mb-2",
+                            "md:w-[85%] md:text-center md:text-black md:text-lg "
+                        )}
+                        >
+                        Notion is where your teams and AI agents capture knowledge, find answers,
+                        and automate projects. Now a team of 7 feels like 70.
+                                            </p>
+                        <section
+                            className={clsx(
+                                "flex flex-col gap-2 w-[85%]",
+                                "md:w-[60%] md:flex md:flex-row md:justify-center md:items-center"
+                            )}
+                            >
+                            <button
+                                className={clsx(
+                                "w-full p-1 rounded-md font-dmsans font-medium bg-[#0075de] text-white",
+                                "md:p-2 md:text-lg"
+                                )}
+                            >
+                                Try Notion
+                            </button>
+
+                            <button
+                                className={clsx(
+                                "w-full p-1 rounded-md font-dmsans font-medium bg-[#8bc2ef] opacity-0.5 text-[#0075de]",
+                                "md:p-2 md:text-lg"
+                                )}
+                            >
+                                Request a demo
+                            </button>
+                        </section>
                 </div>
 
                 
 
             </div>
             <div>
-                <h5 className="font-dmsans font-light opacity-[0.5] text-xs text-center mt-4">
+                <h5
+                    className={clsx(
+                        "font-dmsans font-light opacity-[0.5] text-xs text-center mt-10",
+                        "md:text-sm"
+                    )}
+                    >
                     Trusted by top teams
                 </h5>
 
-                <div className="flex flex-wrap items-center justify-center gap-x-7 gap-y-1">
-                    <section className="flex items-center gap-2">
+                <div
+                className={clsx(
+                    "flex flex-wrap items-center justify-center gap-x-7 gap-y-1",
+                    "md:w-full "
+                )}
+                >                   
+                    <section
+                        className={clsx(
+                        "flex items-center gap-2"
+                        )}
+                    >
                         <img
-                            src = "/logos/Figma_Symbol_1.png"
-                            className="h-4"
+                        src="/logos/Figma_Symbol_1.png"
+                        className={clsx(
+                            "h-4",
+                            "md:h-5"
+                        )}
                         />
+
                         <img
-                            src="/logos/Figma_Logo_1.png"
-                            className="h-4 object-contain"
+                        src="/logos/Figma_Logo_1.png"
+                        className={clsx(
+                            "h-4 object-contain,",
+                            "md:h-5"
+                        )}
                         />
                     </section>
 
                     <img
-                        src = "/logos/OpenAI_Logo_1.png"
-                        className="h-12 object-contain"
+                        src="/logos/OpenAI_Logo_1.png"
+                        className={clsx(
+                            "h-12 object-contain",
+                            "md:h-14"
+                        )}
                     />
+
                     <img
-                        src = "/logos/Ramp_idxW_Yq9Eu_1.png"
-                        className="h-4 object-contain"
+                        src="/logos/Ramp_idxW_Yq9Eu_1.png"
+                        className={clsx(
+                            "h-4 object-contain,",
+                            "md:h-5"
+                        )}
                     />
+                    
+
                     <img
-                        src = "/logos/Cursor_Logo_1.png"
-                        className="h-4 object-contain"
+                        src="/logos/Cursor_Logo_1.png"
+                        className={clsx(
+                            "h-4 object-contain,",
+                            "md:h-5"
+                        )}
                     />
+
                     <img
-                        src = "/logos/Vercel_Logo_1.png"
-                        className="h-[0.85em] object-contain"
+                        src="/logos/Vercel_Logo_1.png"
+                        className={clsx(
+                            "h-[0.85em] object-contain",
+                            "md:h-[0.95em]"
+                        )}
                     />
                 </div>
             </div>
