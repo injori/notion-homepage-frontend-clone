@@ -12,8 +12,9 @@ export default function Features(){
         <div className={clsx("bg-[#f6f5f4]")}>
             <h3
                 className={clsx(
-                "font-dmsans font-bold text-2xl",
-                "m-4 mt-4 mx-8"
+                "font-dmsans font-bold text-2xl m-4 mx-8 pt-8",
+                "md:text-4xl",
+                "lg:text-[2.75em]"
                 )}
             >
                 Introducing Notion 3.0
@@ -86,7 +87,9 @@ export default function Features(){
                         </CardTitle>
                     </CardHeader>
 
-                    <CardContent className={clsx("relative w-full h-[25em] bg-[#78736f]")}>
+                    <CardContent className={clsx("relative w-full h-[25em] bg-[#78736f]",
+                        "lg:h-[30em]"
+                    )}>
                         <img
                             className={clsx(
                                 "object-cover [object-position:left\ center] w-[50%] h-[70%] border-t-[0.25rem] border-t-black border-r-[0.25rem] border-r-black border-l-[0.25rem] border-l-black rounded-tl-2xl rounded-tr-2xl absolute bottom-0"
@@ -132,7 +135,8 @@ export default function Features(){
 
                     <CardContent className={clsx(
                         "relative w-full h-[15.625em] bg-[#f67463]",
-                        
+                        "md:h-[22em]",
+                        "lg:h-[30em]"
                     )}>
                         <img
                             alt="Homepage | Fall 25 | Bento 1"
@@ -155,7 +159,7 @@ export default function Features(){
                     </CardContent>
                 </Card>
 
-                <Card className={clsx("w-[85%] mx-auto")}>
+                <Card className={clsx("w-[85%] mx-auto mb-5")}>
                     <CardHeader>
                         <CardDescription className={clsx("font-dmsans",
                         "md:text-base md:text-gray-600" 
@@ -165,17 +169,22 @@ export default function Features(){
                         <CardTitle className={clsx("font-dmsans",
                             "md:text-lg"
                         )}>
-                            Pergect notes, every time.
+                            Perfect notes, every time.
                         </CardTitle>
                     </CardHeader>
 
-                    <CardContent className={clsx("relative w-full h-[15.625em] bg-[#62aef0]")}>
+                    <CardContent className={clsx(
+                        "relative w-full h-[15.625em] bg-[#62aef0]",
+                        "md:h-[22em]",
+                        "lg:h-[30em]"
+
+                    )}>
                         <img
                             src="https://images.ctfassets.net/spoqsaf9291f/6ryGYBBeFdl21HUR07Rf45/805485a867aec66c8aca2087dfd7cb19/en-US_MeetingNotes.jpg"
                             alt="Homepage | Fall 25 | Bento 2 | Desktop"
                             className={clsx(
-                                " w-[60] h-[90%] object-cover object-center absolute bottom-0 left-1/2 -translate-x-1/2 border-t-[0.25rem] border-t-black border-r-[0.25rem] border-r-black border-l-[0.25rem] border-l-black rounded-tl-2xl rounded-tr-2xl",
-                                "md:border-t-[0.40rem] md:border-r-[0.40rem]  md:border-l-[0.40rem]"
+                                " w-[85%] h-[90%] object-cover object-center absolute bottom-0 left-1/2 -translate-x-1/2 border-t-[0.25rem] border-t-black border-r-[0.25rem] border-r-black border-l-[0.25rem] border-l-black rounded-tl-2xl rounded-tr-2xl",
+                                "md:border-t-[0.40rem] md:border-r-[0.40rem]  md:border-l-[0.40rem] md:rounded-tl-3xl md:rounded-tr-3xl "
                             )}
                         />
                         <video
@@ -186,7 +195,7 @@ export default function Features(){
                             playsInline
                             className={clsx(
                                 "w-[30%] absolute bottom-0 right-0 mix-blend-multiply",
-                                "md:w-[20%] "
+                                "md:w-[20%] right-5"
                             )}
                         />
                     </CardContent>

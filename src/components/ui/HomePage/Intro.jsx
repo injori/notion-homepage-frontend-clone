@@ -11,15 +11,17 @@ export default function Intro(){
                     loop
                     muted
                     playsInline
-                    className="mx-auto w-[95%]"
+                    className= {clsx("mx-auto mt-4 w-[95%]",
+                        "lg:w-[80%]"
+                    )}
                 />
 
                 <div className=" flex flex-col gap-2 justify-center items-center w-[80%] mx-auto">
                     
-                    {/* <h1 className="indent-10 w-[5em] text-4xl font-dmsans font-extrabold md:w-[75%] md:text-center md:text-5xl">One workspace.</h1> */}
                     <h1 className={ clsx(
                         "indent-10 w-[5em] text-4xl font-dmsans font-extrabold",
                         "md:w-[75%] md:text-center md:text-5xl",
+                        "lg:text-6xl"
                     )}>
                         One workspace.
                     </h1>
@@ -27,7 +29,8 @@ export default function Intro(){
                     <h1
                         className={clsx(
                             "text-center tracking-tight text-4xl font-dmsans font-bold",
-                            "md:w-[75%] md:pl-8 md:text-5xl"
+                            "md:w-[75%] md:pl-8 md:text-5xl",
+                            "lg:text-6xl"
                         )}
                         >
                         Zero busywork.
@@ -35,7 +38,8 @@ export default function Intro(){
                     <p
                         className={clsx(
                             "font-dmsans font-light text-sm w-[70%] tracking-tight leading-4 mb-2",
-                            "md:w-[85%] md:text-center md:text-black md:text-lg "
+                            "md:w-[85%] md:text-center md:text-black md:text-lg ",
+                            "lg:text-2xl"
                         )}
                         >
                         Notion is where your teams and AI agents capture knowledge, find answers,
@@ -50,7 +54,8 @@ export default function Intro(){
                             <button
                                 className={clsx(
                                 "w-full p-1 rounded-md font-dmsans font-medium bg-[#0075de] text-white",
-                                "md:p-2 md:text-lg"
+                                "md:p-2 md:text-lg",
+                                "lg:text-xl lg:font-semibold"
                                 )}
                             >
                                 Try Notion
@@ -59,7 +64,8 @@ export default function Intro(){
                             <button
                                 className={clsx(
                                 "w-full p-1 rounded-md font-dmsans font-medium bg-[#8bc2ef] opacity-0.5 text-[#0075de]",
-                                "md:p-2 md:text-lg"
+                                "md:p-2 md:text-lg",
+                                "lg:text-xl lg:font-semibold"
                                 )}
                             >
                                 Request a demo
@@ -74,7 +80,8 @@ export default function Intro(){
                 <h5
                     className={clsx(
                         "font-dmsans font-light opacity-[0.5] text-xs text-center mt-10",
-                        "md:text-sm"
+                        "md:text-sm",
+                        "lg:text-lg"
                     )}
                     >
                     Trusted by top teams
@@ -83,7 +90,8 @@ export default function Intro(){
                 <div
                 className={clsx(
                     "flex flex-wrap items-center justify-center gap-x-7 gap-y-1",
-                    "md:w-full "
+                    "md:w-full ",
+                    "lg:gap-x-10"
                 )}
                 >                   
                     <section
@@ -95,7 +103,8 @@ export default function Intro(){
                         src="/logos/Figma_Symbol_1.png"
                         className={clsx(
                             "h-4",
-                            "md:h-5"
+                            "md:h-5",
+                            "lg:h-7"
                         )}
                         />
 
@@ -103,7 +112,8 @@ export default function Intro(){
                         src="/logos/Figma_Logo_1.png"
                         className={clsx(
                             "h-4 object-contain,",
-                            "md:h-5"
+                            "md:h-5",
+                            "lg:h-6"
                         )}
                         />
                     </section>
@@ -112,7 +122,8 @@ export default function Intro(){
                         src="/logos/OpenAI_Logo_1.png"
                         className={clsx(
                             "h-12 object-contain",
-                            "md:h-14"
+                            "md:h-14",
+                            "lg:h-16"
                         )}
                     />
 
@@ -120,7 +131,8 @@ export default function Intro(){
                         src="/logos/Ramp_idxW_Yq9Eu_1.png"
                         className={clsx(
                             "h-4 object-contain,",
-                            "md:h-5"
+                            "md:h-5",
+                            "lg:h-6"
                         )}
                     />
                     
@@ -129,7 +141,8 @@ export default function Intro(){
                         src="/logos/Cursor_Logo_1.png"
                         className={clsx(
                             "h-4 object-contain,",
-                            "md:h-5"
+                            "md:h-5",
+                            "lg:h-6"
                         )}
                     />
 
@@ -137,7 +150,9 @@ export default function Intro(){
                         src="/logos/Vercel_Logo_1.png"
                         className={clsx(
                             "h-[0.85em] object-contain",
-                            "md:h-[0.95em]"
+                            "md:h-[0.95em]",
+                            "lg:h-[1.15em]"
+
                         )}
                     />
                 </div>
