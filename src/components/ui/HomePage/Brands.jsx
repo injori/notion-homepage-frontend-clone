@@ -20,32 +20,37 @@ export default function Brands(){
             <div className=" flex flex-col gap-4">
                     
                 <Card className={clsx("w-[85%] mx-auto",
-
+                    "lg:w-[75%]"
                 )}>
                     <CardContent>
                         <img
                             src="/public/logos/OpenAI_Logo_1.png"
                             className={clsx("w-[25%] h-12 relative object-cover object-top mb-2",
-                                "md:w-[20%] md:object-center md:h-12 md:mt-4"
+                                "md:w-[20%] md:object-center md:h-12 md:mt-4",
+                                "xl:w-[20%] xl:object-center xl:h-14 xl:mt-8"
                             )}
                         />
 
                         <p className={clsx(" font-sortsmillgoudy font-medium text-xl text-black",
-                            "md:w-[85%] "
+                            "md:w-[85%] ",
+                            "xl:text-[1.5em]"
                         )}>
                             "There’s power in a single platform where you can do all your work. Notion is that single place."
                         </p>
 
                         <a
                             href=""
-                            className={clsx(" font-dmsans text-base text-[#1e85e2] ")}
+                            className={clsx(" font-dmsans text-base text-[#1e85e2] ",
+                                "xl:text-xl+"
+                            )}
                         >
                             Read the full story
                         </a>
 
                         <iframe
                             className={clsx("w-[87%] rounded-3xl mt-4 mx-auto",
-                                "md:h-[20rem]"
+                                "md:h-[20rem]",
+                                "xl:h-[30em]"
                             )}
                             src="https://www.youtube.com/embed/HubmluaaFmc?si=sdTYEGK8c7C8skf3"
                             title="YouTube video player"
@@ -57,7 +62,7 @@ export default function Brands(){
                     </CardContent>
                 </Card>
 
-                <div className="lg:flex lg:flex-wrap lg:justify-center gap-y-6">
+                <div className="lg:flex lg:flex-wrap lg:justify-center lg:items-center lg:mx-auto gap-y-6 lg:w-[80%]">
                     <Card className={clsx("w-[85%] mx-auto",
                         " lg:w-[45%]"
                     )

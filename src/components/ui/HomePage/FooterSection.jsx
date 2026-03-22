@@ -52,14 +52,18 @@ export default function FooterSection(){
                     (items)=>{
                         return(
                             <section key={items.category}>
-                                <h4 className={clsx({ "font-dmsans font-semibold": true })}>
+                                <h4 className={clsx({ "font-dmsans font-semibold": true },
+                                    "xl:text-2xl"
+                                )}>
                                     {items.category}
                                 </h4>
                                 {items.elements.map(
                                     (items) => (
                                         <h5 
                                             key={items} 
-                                            className={clsx({ "font-dmsans font-light text-gray-800": true })}
+                                            className={clsx({ "font-dmsans font-light text-gray-800": true },
+                                                "xl:text-xl"
+                                            )}
                                         >
                                             {items}
                                         </h5>

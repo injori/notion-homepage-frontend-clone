@@ -14,18 +14,20 @@ export default function ApplicationExamples(){
             <img
                 src="https://images.ctfassets.net/spoqsaf9291f/66v6l4XnHVR2L6Sr1lgZdW/b36806193b2a88b4d1e5e1cdb12de77b/asset-use-cases.png"
                 className={clsx({ "w-[70%] mx-8 mt-6": true },
-                    "lg:w-[55%]"
+                    "lg:w-[40%]"
                 )}
             />
             <h3 className={clsx({ "font-dmsans font-bold text-2xl mb-2 mt-8 mx-8": true },
                 "md:text-4xl",
-                "lg:text-[2.75em]"
+                "lg:text-[2.75em]",
+                "xl:text-5xl"
             )}>
                 Let Notion AI handle the busywork.
             </h3>
             <p className={clsx({ "w-[80%] mx-8 font-dmsans font-light leading-tight": true },
                 "md:text-lg",
-                "lg:text-xl"
+                "lg:text-xl",
+                "xl:text-2xl"
             )}>
                 Pick a use case to see how Notion does the work for you.
             </p>
@@ -37,14 +39,17 @@ export default function ApplicationExamples(){
                 <span><MoveRight/></span>
             </a>
 
-            <div className={clsx({ "w-[90%] mx-auto grid grid-cols-2 gap-y-2 [column-gap:0.75em] mb-8": true })}>
+            <div className={clsx({ "w-[90%] mx-auto grid grid-cols-2 gap-y-2 [column-gap:0.75em] mb-8": true },
+                "lg:w-[85%]"
+            )}>
 
                 <Card className={clsx({ "w-full": true })}>
                     <CardTitle>
                         <MessageCircleQuestionMark className={clsx({ "m-2": true })}/>
                     </CardTitle>
                     <CardDescription className={clsx({ "font-dmsans font-bold text-gray-600 m-2": true },
-                        "md:text-lg"
+                        "md:text-lg",
+                        "xl:text-xl"
                     )}>
                         Go from brainstorm to roadmap <MoveRight className={clsx({ "mx-4": true })}/>
                     </CardDescription>
@@ -56,7 +61,8 @@ export default function ApplicationExamples(){
                     </CardTitle>
 
                     <CardDescription className={clsx({ "font-dmsans font-bold text-gray-600 m-2": true },
-                        "md:text-lg"
+                        "md:text-lg",
+                        "xl:text-xl"
                     )}>
                        Turning meetings into social posts  <MoveRight/>
                     </CardDescription>
@@ -68,7 +74,8 @@ export default function ApplicationExamples(){
                     </CardTitle>
 
                     <CardDescription className={clsx({ "font-dmsans font-bold text-gray-600 m-2": true },
-                        "md:text-lg"
+                        "md:text-lg",
+                        "xl:text-xl"
                         )}>
                         Organixe your workspace <MoveRight/>
                     </CardDescription>
@@ -80,7 +87,8 @@ export default function ApplicationExamples(){
                     </CardTitle>
 
                     <CardDescription className={clsx({ "font-dmsans font-bold text-gray-600 m-2": true },
-                        "md:text-lg"
+                        "md:text-lg",
+                        "xl:text-xl"
                         )}>
                        Onboard a new hire  <MoveRight/>
                     </CardDescription>
@@ -92,7 +100,8 @@ export default function ApplicationExamples(){
                     </CardTitle>
 
                     <CardDescription className={clsx({ "font-dmsans font-bold text-gray-600 m-2": true },
-                        "md:text-lg"
+                        "md:text-lg",
+                        "xl:text-xl"
                         )}>
                         Revise a landing page <MoveRight/>
                     </CardDescription>
@@ -104,7 +113,8 @@ export default function ApplicationExamples(){
                     </CardTitle>
 
                     <CardDescription className={clsx({ "font-dmsans font-bold text-gray-600 m-2": true },
-                        "md:text-lg"
+                        "md:text-lg",
+                        "xl:text-xl"
                         )}>
                         Plan an offsite <MoveRight/>
                     </CardDescription>
@@ -116,7 +126,8 @@ export default function ApplicationExamples(){
                     </CardTitle>
 
                     <CardDescription className={clsx({ "font-dmsans font-bold text-gray-600 m-2": true },
-                        "md:text-lg"
+                        "md:text-lg",
+                        "xl:text-xl"
                         )}>
                         Track favorite restautants <MoveRight/>
                     </CardDescription>
@@ -128,7 +139,8 @@ export default function ApplicationExamples(){
                     </CardTitle>
 
                     <CardDescription className={clsx({ "font-dmsans font-bold text-gray-600 m-2": true },
-                        "md:text-lg"
+                        "md:text-lg",
+                        "xl:text-xl"
                         )}>
                         Transform notes into tasks <MoveRight/>
                     </CardDescription>

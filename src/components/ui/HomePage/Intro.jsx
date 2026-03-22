@@ -21,7 +21,8 @@ export default function Intro(){
                     <h1 className={ clsx(
                         "indent-10 w-[5em] text-4xl font-dmsans font-extrabold",
                         "md:w-[75%] md:text-center md:text-5xl",
-                        "lg:text-6xl"
+                        "lg:text-6xl",
+                        "xl:text-7xl"
                     )}>
                         One workspace.
                     </h1>
@@ -30,7 +31,8 @@ export default function Intro(){
                         className={clsx(
                             "text-center tracking-tight text-4xl font-dmsans font-bold",
                             "md:w-[75%] md:pl-8 md:text-5xl",
-                            "lg:text-6xl"
+                            "lg:text-6xl",
+                            "xl:text-7xl"
                         )}
                         >
                         Zero busywork.
@@ -39,7 +41,8 @@ export default function Intro(){
                         className={clsx(
                             "font-dmsans font-light text-sm w-[70%] tracking-tight leading-4 mb-2",
                             "md:w-[85%] md:text-center md:text-black md:text-lg ",
-                            "lg:text-2xl"
+                            "lg:text-2xl",
+                            "xl:text-3xl"
                         )}
                         >
                         Notion is where your teams and AI agents capture knowledge, find answers,
@@ -53,9 +56,10 @@ export default function Intro(){
                             >
                             <button
                                 className={clsx(
-                                "w-full p-1 rounded-md font-dmsans font-medium bg-[#0075de] text-white",
+                                "w-full p-1 rounded-md font-dmsans font-medium bg-[#1a86f0] text-white hover:bg-[#005bb5]",
                                 "md:p-2 md:text-lg",
-                                "lg:text-xl lg:font-semibold"
+                                "lg:text-xl lg:font-semibold",
+                                "xl:text-2xl"
                                 )}
                             >
                                 Try Notion
@@ -63,9 +67,10 @@ export default function Intro(){
 
                             <button
                                 className={clsx(
-                                "w-full p-1 rounded-md font-dmsans font-medium bg-[#8bc2ef] opacity-0.5 text-[#0075de]",
+                                "w-full p-1 rounded-md font-dmsans font-medium bg-[#8bc2ef] opacity-0.5 text-[#0075de] hover:bg-[#a3d0f8]",
                                 "md:p-2 md:text-lg",
-                                "lg:text-xl lg:font-semibold"
+                                "lg:text-xl lg:font-semibold",
+                                "xl:text-2xl"
                                 )}
                             >
                                 Request a demo

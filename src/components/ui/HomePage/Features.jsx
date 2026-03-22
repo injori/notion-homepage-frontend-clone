@@ -13,8 +13,9 @@ export default function Features(){
             <h3
                 className={clsx(
                 "font-dmsans font-bold text-2xl m-4 mx-8 pt-8",
-                "md:text-4xl",
-                "lg:text-[2.75em]"
+                "md:text-3xl",
+                "lg:text-[2.25em]",
+                "xl:text-[2.5em]"
                 )}
             >
                 Introducing Notion 3.0
@@ -22,21 +23,29 @@ export default function Features(){
 
             <div className={clsx("flex flex-col gap-4 m-2")}>
 
-                <Card className={clsx("w-[85%] mx-auto")}>
+                <Card className={clsx("w-[85%] mx-auto",
+                    "lg:w-[75%]"
+                )
+                }>
                 <CardHeader>
-                    <CardDescription className={clsx("font-dmsans")}>
+                    <CardDescription className={clsx("font-dmsans",
+                        "xl:text-lg"
+                    )}>
                     Notion Agent 
                     <span
                         className={clsx(
-                        "font-dmsans bg-[#e3f6ff] text-[#62aef0]",
-                        "rounded-lg pl-2 px-2"
+                        "font-dmsans bg-[#e3f6ff] text-[#62aef0] rounded-lg pl-2 px-2",
+                        "xl:text-lg"
                         )}
                     >
                         New
                     </span>
                     </CardDescription>
 
-                    <CardTitle>
+                    <CardTitle className = {clsx("font-dmsans font-semibold",
+                            "md:text-lg",
+                            "lg:text-xl",
+                            "xl:text-3xl ")}>
                     You assign the tasks. Your Notion agent does the work.
                     </CardTitle>
                 </CardHeader>
@@ -57,8 +66,8 @@ export default function Features(){
                     muted
                     playsInline
                     className={clsx(
-                        "w-[30%] absolute bottom-16 right-0",
-                        "mix-blend-multiply"
+                        "w-[30%] absolute bottom-16 right-0 mix-blend-multiply",
+                        "lg:w-[20%]"
                     )}
                     />
 
@@ -73,16 +82,27 @@ export default function Features(){
                 </CardContent>
                 </Card>
 
-                <Card className={clsx("w-[85%] mx-auto")}>
-                    <CardHeader>
-                        <CardDescription className={clsx("font-dmsans")}>
+                <Card className={clsx("w-[85%] mx-auto",
+                    "lg:w-[75%]",
+                    "xl:flex xl:flex-row"
+                )}>
+                    <CardHeader className = {clsx("xl:w-[45%] my-12")}>
+                        <CardDescription className={clsx("font-dmsans",
+                            "xl:text-lg"
+                        )}>
                             Custom Agents
-                            <span className={clsx("font-dmsans bg-[#e3f6ff] text-[#62aef0] pl-2 px-2 rounded-lg")}>
+                            <span className={clsx("font-dmsans bg-[#e3f6ff] text-[#62aef0] pl-2 px-2 rounded-lg",
+                                "xl:text-lg"
+                            )}>
                                 Coming soon
                             </span>
                         </CardDescription>
 
-                        <CardTitle className={clsx("font-dmsans")}>
+                        <CardTitle className={clsx("font-dmsans font-semibold",
+                            "md:text-lg",
+                            "lg:text-xl",
+                            "xl:text-3xl "
+                        )}>
                             Automate repetitive tasks.
                         </CardTitle>
                     </CardHeader>
@@ -116,91 +136,104 @@ export default function Features(){
                         />
                     </CardContent>
                 </Card>
+                <div className= {clsx( "flex flex-col mb-4",
+                    "lg:w-[75%] lg:mx-auto",
+                    "xl:flex xl:flex-row xl:gap-4 xl:items-center xl:justify-center"
+                )}>
+                    <Card className={clsx("w-[85%] mx-auto",
+                        "xl:w-[50%] xl:m-0 xl:h-[85%]"
+                    )}>
+                        <CardHeader>
+                            <CardDescription className={clsx(
+                                "font-dmsans",
+                                "md:text-base md:text-gray-600" 
+                            )}>
+                                Enterprise Search
+                            </CardDescription>
+                            <CardTitle className={clsx(
+                                "font-dmsans font-semibold",
+                                "md:text-lg",
+                                "lg:text-xl",
+                                "xl:text-3xl "
+                            )}>
+                                One search for everything
+                            </CardTitle>
+                        </CardHeader>
 
-                <Card className={clsx("w-[85%] mx-auto")}>
-                    <CardHeader>
-                        <CardDescription className={clsx(
-                            "font-dmsans",
+                        <CardContent className={clsx(
+                            "relative w-full h-[15.625em] bg-[#f67463]",
+                            "md:h-[22em]",
+                            "lg:h-[30em]",
+                            "xl:h-[25em]"
+                        )}>
+                            <img
+                                alt="Homepage | Fall 25 | Bento 1"
+                                className={clsx(
+                                    "rounded-xl w-[90%] h-[95%] border-solid border-gray-300 object-contain object-top absolute bottom-0 left-1/2 -translate-x-1/2",
+                                    " md:object-cover md:w-[93%]"
+                                )}
+                                src="https://images.ctfassets.net/spoqsaf9291f/5gAtostQzWHe0xapLDsst1/23d29524e34f0012354a2448d2311b16/en-US_EnterpriseSearch.jpg"
+                            />
+                            <video
+                                src="/videos/clip_noseyGlasses.mp4"
+                                autoPlay
+                                loop
+                                muted
+                                playsInline
+                                className={clsx("w-[30%] absolute bottom-0 right-0 mix-blend-multiply",
+                                    "md:w-[20%]"
+                                )}
+                            />
+                        </CardContent>
+                    </Card>
+                
+
+                    <Card className={clsx("w-[85%] mx-auto mb-5",
+                        "xl:w-[50%] xl:m-0 xl:h-[85%]"
+                    )}>
+                        <CardHeader>
+                            <CardDescription className={clsx("font-dmsans",
                             "md:text-base md:text-gray-600" 
+                            )}>
+                                AI Meeting Notes
+                            </CardDescription>
+                            <CardTitle className={clsx("font-dmsans font-semibold",
+                                "md:text-lg",
+                                "lg:text-xl",
+                                "xl:text-3xl"
+                            )}>
+                                Perfect notes, every time.
+                            </CardTitle>
+                        </CardHeader>
+
+                        <CardContent className={clsx(
+                            "relative w-full h-[15.625em] bg-[#62aef0]",
+                            "md:h-[22em]",
+                            "lg:h-[30em]",
+                            "xl:h-[25em]"
                         )}>
-                            Enterprise Search
-                        </CardDescription>
-                        <CardTitle className={clsx(
-                            "font-dmsans",
-                            "md:text-lg"
-                        )}>
-                            One search for everything
-                        </CardTitle>
-                    </CardHeader>
-
-                    <CardContent className={clsx(
-                        "relative w-full h-[15.625em] bg-[#f67463]",
-                        "md:h-[22em]",
-                        "lg:h-[30em]"
-                    )}>
-                        <img
-                            alt="Homepage | Fall 25 | Bento 1"
-                            className={clsx(
-                                "rounded-xl w-[90%] h-[95%] border-solid border-gray-300 object-contain object-top absolute bottom-0 left-1/2 -translate-x-1/2",
-                                " md:object-cover md:w-[93%]"
-                            )}
-                            src="https://images.ctfassets.net/spoqsaf9291f/5gAtostQzWHe0xapLDsst1/23d29524e34f0012354a2448d2311b16/en-US_EnterpriseSearch.jpg"
-                        />
-                        <video
-                            src="/videos/clip_noseyGlasses.mp4"
-                            autoPlay
-                            loop
-                            muted
-                            playsInline
-                            className={clsx("w-[30%] absolute bottom-0 right-0 mix-blend-multiply",
-                                "md:w-[20%]"
-                            )}
-                        />
-                    </CardContent>
-                </Card>
-
-                <Card className={clsx("w-[85%] mx-auto mb-5")}>
-                    <CardHeader>
-                        <CardDescription className={clsx("font-dmsans",
-                        "md:text-base md:text-gray-600" 
-                        )}>
-                            AI Meeting Notes
-                        </CardDescription>
-                        <CardTitle className={clsx("font-dmsans",
-                            "md:text-lg"
-                        )}>
-                            Perfect notes, every time.
-                        </CardTitle>
-                    </CardHeader>
-
-                    <CardContent className={clsx(
-                        "relative w-full h-[15.625em] bg-[#62aef0]",
-                        "md:h-[22em]",
-                        "lg:h-[30em]"
-
-                    )}>
-                        <img
-                            src="https://images.ctfassets.net/spoqsaf9291f/6ryGYBBeFdl21HUR07Rf45/805485a867aec66c8aca2087dfd7cb19/en-US_MeetingNotes.jpg"
-                            alt="Homepage | Fall 25 | Bento 2 | Desktop"
-                            className={clsx(
-                                " w-[85%] h-[90%] object-cover object-center absolute bottom-0 left-1/2 -translate-x-1/2 border-t-[0.25rem] border-t-black border-r-[0.25rem] border-r-black border-l-[0.25rem] border-l-black rounded-tl-2xl rounded-tr-2xl",
-                                "md:border-t-[0.40rem] md:border-r-[0.40rem]  md:border-l-[0.40rem] md:rounded-tl-3xl md:rounded-tr-3xl "
-                            )}
-                        />
-                        <video
-                            src="/videos/clip_noseyHeadset.mp4"
-                            autoPlay
-                            loop
-                            muted
-                            playsInline
-                            className={clsx(
-                                "w-[30%] absolute bottom-0 right-0 mix-blend-multiply",
-                                "md:w-[20%] right-5"
-                            )}
-                        />
-                    </CardContent>
-                </Card>
-
+                            <img
+                                src="https://images.ctfassets.net/spoqsaf9291f/6ryGYBBeFdl21HUR07Rf45/805485a867aec66c8aca2087dfd7cb19/en-US_MeetingNotes.jpg"
+                                alt="Homepage | Fall 25 | Bento 2 | Desktop"
+                                className={clsx(
+                                    " w-[85%] h-[90%] object-cover object-center absolute bottom-0 left-1/2 -translate-x-1/2 border-t-[0.25rem] border-t-black border-r-[0.25rem] border-r-black border-l-[0.25rem] border-l-black rounded-tl-2xl rounded-tr-2xl",
+                                    "md:border-t-[0.40rem] md:border-r-[0.40rem]  md:border-l-[0.40rem] md:rounded-tl-3xl md:rounded-tr-3xl "
+                                )}
+                            />
+                            <video
+                                src="/videos/clip_noseyHeadset.mp4"
+                                autoPlay
+                                loop
+                                muted
+                                playsInline
+                                className={clsx(
+                                    "w-[30%] absolute bottom-0 right-0 mix-blend-multiply",
+                                    "md:w-[20%] right-5"
+                                )}
+                            />
+                        </CardContent>
+                    </Card>
+                </div>
             </div>
         </div>
     )
